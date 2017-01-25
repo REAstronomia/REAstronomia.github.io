@@ -12,16 +12,28 @@
 <body>
 <header class="container"> 
   <div class="row"> 
-    <h1 class="col-sm-4"> VI REA</h1> 
-    <nav class="col-sm-8 text-right">
-      <p> Inicio </p>
+    <nav class="navbar navbar-inverse navbar-fixed-top"> <!--col-sm-8 text-right -->
+    <div class="container-fluid"
+    <div class="navbar-header">
+    <a class="navbar-brand" href="#"> VI REA </a> 
+    </div> 
+    <!--  <p> Inicio </p>
       <p><a href="#bienvenida"> Bienvenida </a> </p> 
       <p><a href="#comite"> Comité</a> </p> 
       <p><a href="#sede"> Sede</a> </p>
       <p><a href="#registro"> Regristro</a> </p> 
       <p><a href="#programa"> Programa</a> </p> 
-      <p> Poster </p> 
-     
+      <p> Poster </p> -->
+      <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Inicio</a></li>
+      <li><a href="#bienvenida">Bienvenida</a></li>
+      <li><a href="#comite">Comité</a></li>
+      <li><a href="#sede">Sede</a></li>
+      <li><a href="#registro">Registro </a></li>
+      <li><a href="#Programa">Programa </a></li>
+      <li><a href="#"> Poster</a> </li>
+
+     </div>
          </nav> 
   </div> 
   </header> 
@@ -136,7 +148,7 @@ Alejandro López Vázquez (IRyA)<br/>
 
 Julián Flores Ramírez (UAZ)<br/>
 
-Fernando----------------<br/>
+Fernando Tavera Romero (UAM)<br/>
                    </p> 
                 </div>
             </div>
@@ -157,8 +169,7 @@ Fernando----------------<br/>
                     <div class="clearfix"></div>
                     
                     <p class="lead">La VI edición de la REA se realizará en las instalaciones del edificio central de la Universidad Autónoma de Yucatán en la ciudad de Mérida, Yucatán. <br/> 
-                    ¿Cómo llegar?<br/> 
-                    Blablablabla 
+            
                     </p>
                 </div>
                 <div class="col-lg-5 col-lg-offset-2 col-sm-6">
@@ -182,31 +193,36 @@ Fernando----------------<br/>
 <form method="get" action="">
 
 <label for="name" >Nombres:</label> <input type="text" id="name" name="nombre" />
+&emsp;
+<label for="last">    Apellidos:</label> <input type="text" id="last" name="apellidos" /><br />
 
-<label for="last">Apellidos:</label> <input type="text" id="last" name="apellidos" /><br />
 
-<label for="mail">Correo electrónico:</label> <input type="text" id="mail" name="correo" /><br />
 <label for="nivel">Nivel de estudios:</label> <input type="text" id="nivel" name="nivel" />
+&emsp;
 <label for="año">Año de ingreso:</label> <input type="text" id="año" name="año"/><br/> 
-<label for="instituto">Instituto:</label> <input type="text" id="instituto" name="Instituto" /><br/> 
+<label for="instituto">Instituto:</label> <input type="text" id="instituto" name="Instituto" />&emsp;
 
 
 <label>Área:</label><input type="text" name="area" /><br/> 
-<label>Título del trabajo:</label> <input type="text" name="titulo"/><br/> 
-<label for="resumen">Abstract:</label><br/> <textarea id="resumen" name="abstract" cols="40" rows="5"></textarea><br/>
-<label>Asistente o participante:</label><br/> <input type="radio" name="aop" value="asistente"> Asistente<br/>
-<input type="radio" name="aop" value="Participante"> Participante <br/>  
+<label for="mail">Correo electrónico:</label> <input type="text" id="mail" name="correo" /><br />
+<label>Título del trabajo:</label> <input type="text" name="titulo" style="width:600px"/><br/> 
+<label for="resumen">Abstract:</label> <textarea id="resumen" name="abstract" cols="40" rows="5"></textarea><br/>
 
-<label>¿Te gustaría que tu trabajo se pudiera considerar para poster?</label><br/>  Si <input type="radio" name="poster" value="Si">  No
+
+<div class="rboton">
+<label style="width:300px">Asistente o participante:</label></br> Asistente<input type="radio" name="aop" value="asistente" > Participante
+<input type="radio" name="aop" value="Participante">  <br/>  
+
+<label style="width:500px">¿Te gustaría que tu trabajo se pudiera considerar para poster?</label><br/>  Si <input type="radio" name="poster" value="Si">  No
 <input type="radio" name="poster" value="No">  <br/>  
 
 
-<label>¿Primera vez que participas?:</label><br/> Si <input type="radio" name="primera" value="Si"> No
+<label style="width:500px;">¿Primera vez que participas?:</label><br/> Si <input type="radio" name="primera" value="Si"> No
 <input type="radio" name="primera" value="No">  <br/>  
-<label>¿En tu escuela existe el apoyo para que asistas a la reunión?</label><br/>  Si <input type="radio" name="apoyo" value="Si">  No
+<label style="width:500px;">¿En tu escuela existe el apoyo para que asistas a la reunión?</label><br/>  Si <input type="radio" name="apoyo" value="Si">  No
 <input type="radio" name="apoyo" value="No">  <br/>  
 <br/>
-
+</div> 
 
 <input type="submit" name="enviar" value="Enviar" />
 
@@ -234,7 +250,7 @@ Fernando----------------<br/>
                     </p>
                 </div>
                 <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                    <img class="img-responsive" src="images/kukulkan2.jpg" alt="">
+                    <img class="img-responsive" src="images/111.png" alt="">
                 </div>
             </div>
 

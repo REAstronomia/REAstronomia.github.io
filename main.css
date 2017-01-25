@@ -39,8 +39,9 @@ body p{
 .jumbotron {
   display: flex;
   align-items: center;
-  background-image: url('http://nochesdekukulkan.com/images/iluminacion/kukulkan2.jpg');
+  background-image: url("images/111.png");
   background-size: cover;
+  background-color: #000; 
   color: #ffffff;
   height: 500px;
   text-shadow: 0.25px 0.25px 0.25px #000000;
@@ -116,3 +117,10 @@ label{
   width: 160px;
   height: 40px;
 }
+input{
+    width: 300px;
+}
+
+.rboton input{
+  width: 100px;  
+};

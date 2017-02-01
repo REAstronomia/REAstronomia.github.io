@@ -22,11 +22,11 @@ die();
 }
 
 $email_message = "Detalles del formulario de contacto:\n\n";
-$email_message .= "Nombre: " . $_POST['first_name'] . "\n";
-$email_message .= "Apellido: " . $_POST['last_name'] . "\n";
-$email_message .= "E-mail: " . $_POST['email'] . "\n";
-$email_message .= "Teléfono: " . $_POST['telephone'] . "\n";
-$email_message .= "Comentarios: " . $_POST['comments'] . "\n\n";
+$email_message .= "Nombre: " . $_POST['name'] . "\n";
+$email_message .= "Apellido: " . $_POST['last'] . "\n";
+$email_message .= "E-mail: " . $_POST['nivel'] . "\n";
+$email_message .= "Teléfono: " . $_POST['año'] . "\n";
+$email_message .= "Comentarios: " . $_POST['instituto'] . "\n\n";
 
 
 // Ahora se envía el e-mail usando la función mail() de PHP

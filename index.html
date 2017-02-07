@@ -191,31 +191,32 @@ Fernando Tavera Romero (UAM)<br/>
             <h2 class="section-heading">Registro </h2>
         <h2> Proximamente </h2> 
 
-<form name="frmContacto" method="post" action="send.php">
+<form name="frmContacto" method="post" action="send1.php">
 
-<label for="name" >Nombres: </label> <input type="text" id="name" name="nombre" />
+<label for="name" >Nombres: </label> <input type="text" id="name" name="name" />
 &emsp;
-<label for="last">    Apellidos: </label> <input type="text" id="last" name="apellidos" /><br />
+<label for="last">    Apellidos: </label> <input type="text" id="last" name="last" /><br />
 
 
 <label for="nivel">Nivel de estudios: </label> <input type="text" id="nivel" name="nivel" />
 &emsp;
-<label for="año">Año de ingreso: </label> <input type="text" id="año" name="año"/><br/> 
-<label for="instituto">Instituto: </label> <input type="text" id="instituto" name="Instituto" />&emsp;
-
-
-<label for="area">Área: </label> <input type="text" name="area" /><br/> 
-<label for="mail">Correo electrónico: </label> <input type="text" id="mail" name="correo" /><br />
-<label for="titulo">Título del trabajo: </label> <input type="text" name="titulo" style="width:600px"/><br/> 
+<label for="year">Año de ingreso: </label> <input type="text" id="year" name="year"/><br/> 
+<label for="instituto">Instituto: </label> <input type="text" id="instituto" name="Instituto" />
+&emsp;
+<label for="area">Área: </label> <input type="text" id="area" name="area" /><br/> 
+<label for="mail">Correo electrónico: </label> <input type="text" id="mail" name="mail" /><br />
+<label for="titulo">Título del trabajo: </label> <input type="text" id="titulo" name="titulo" style="width:600px"/><br/> 
 <label for="resumen">Abstract: </label> <textarea id="resumen" name="abstract" cols="40" rows="5"></textarea><br/>
+<br/>
+<label for="marca">Marca con X según sea el caso 
+</label> 
+<br/>
+<br/>
+<label style="width:300px">Asistente o participante:</label>
+<br/>
+ Asistente<input type="radio" name="aop" value="asistente" > Participante <input type="radio" name="aop" value="Participante">  <br/>  
 
-
-<div class="rboton">
-<label style="width:300px">Asistente o participante:</label></br> Asistente<input type="radio" name="aop" value="asistente" > Participante
-<input type="radio" name="aop" value="Participante">  <br/>  
-
-<label style="width:500px">¿Te gustaría que tu trabajo se pudiera considerar para poster?</label><br/>  Si <input type="radio" name="poster" value="Si">  No
-<input type="radio" name="poster" value="No">  <br/>  
+<label style="width:500px">¿Te gustaría que tu trabajo se pudiera considerar para poster?</label><br/>  Si <input type="radio" name="poster" value="Si">  No <input type="radio" name="poster" value="No">  <br/>  
 
 
 <label style="width:500px;">¿Primera vez que participas?:</label><br/> Si <input type="radio" name="primera" value="Si"> No
@@ -223,7 +224,7 @@ Fernando Tavera Romero (UAM)<br/>
 <label style="width:500px;">¿En tu escuela existe el apoyo para que asistas a la reunión?</label><br/>  Si <input type="radio" name="apoyo" value="Si">  No
 <input type="radio" name="apoyo" value="No">  <br/>  
 <br/>
-</div> 
+
 
 <input type="submit" name="enviar" value="Enviar" />
 

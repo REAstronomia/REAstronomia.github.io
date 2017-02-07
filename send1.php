@@ -13,7 +13,7 @@ $aop = $_POST['aop'];
 $poster = $_POST['poster'];
 $primera = $_POST['primera'];
 $apoyo = $_POST['apoyo'];
-$Header = 'From: '.$Email ." \r\n";
+$Header = 'From: '.$mail ." \r\n";
 $Header .= "X-Mailer: PHP/" . phpversion() . " \r\n";
 $Header .= "Mime-Version: 1.0 \r\n";
 $Header .= "Content-Type: text/plain";
@@ -35,8 +35,8 @@ $Mensaje .= "Apoyo: ".$apoyo." \r\n";
 
 $Mensaje .= "Enviado el ".date('d/m/Y', time());
 
-$Para = 'fer8707@gmail.com';
-$Asunto = 'Inscripcio desde Web Campus';
+$Para = 'reaastromx@gmail.com';
+$Asunto = 'Inscripción';
 
 mail($Para, $Asunto, utf8_decode($Mensaje), $Header);
 

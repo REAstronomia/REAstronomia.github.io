@@ -36,6 +36,10 @@ body p{
     font-weight: 500; 
 }
 
+body h2{
+    color: #FFC000
+}
+
 .jumbotron {
   display: flex;
   align-items: center;

@@ -4,7 +4,23 @@
   <title>VI Reunión de Estudiantes de Astronomía</title>
   <meta charset="utf-8"/>
       <!--charset: Indica el tipo de codificación para las letras, utf-8 acepta acentos -->
-   
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>		 	<script>
+		$(document).ready(function() {
+			$('.overlay-container').fadeOut().end().find('.window-container').removeClass('window-container-visible');
+			$('.button').click(function() {
+				type = $(this).attr('data-type');
+				$('.overlay-container').fadeIn(function() {
+				window.setTimeout(function(){
+					$('.window-container.'+type).addClass('window-container-visible');
+				}, 100);
+				});
+			});
+			$('.close').click(function() {
+				$('.overlay-container').fadeOut().end().find('.window-container').removeClass('window-container-visible');
+			});
+		});
+	</script>
+  
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="main.css">
@@ -259,11 +275,34 @@ Fernando Tavera Romero (UAM)<br/>
 
 
 <input type="submit" name="enviar" value="Enviar" />
-
+<input type="button" value="Lista de registrados" class="button" data-type="zoomin" />  
+         <div class="overlay-container">
+		<div class="window-container zoomin">
+			<h3>Lista de participantes registrados</h3> 
+            <!-- inicia lista de participantes --> 
+			<strong> Ilse Alejandra Aguilar Segoviano</strong> - Universidad de Guanajuato<br/>
+            <strong> Sara Coutiño de León</strong> - INAOE<br/>
+            <strong> Jesús Adrián Ix Ballote</strong> - Instituto Tecnológico de Mérida<br/>
+            <strong> Karla Jazmín Aguilar Rivera</strong> - Facultad en Ciencias de Física y Matemáticas UNACH<br/>
+            <strong> Julián Alejandro Flores Ramírez</strong> - UAZ<br/>
+            <strong> Olivia Del Carmen Bautista Hernández</strong> - Universidad Autónoma de Chiapas<br/>
+            <strong> Gladys Alejandra Aguilar Herrera</strong> - Universidad Autónoma Metropolitana<br/>
+            <strong> Donaji Catalina Alejandra Esparza Arredondo</strong> - IRyA, UNAM<br/>
+            <strong> Susana Abigail Gonzalez Flores</strong> - Unidad Académica de Física de la UAZ<br/>
+            <strong> Francisco Fabian Arellano</strong> - Facultad de Ciencias, UNAM<br/>
+            <br />
+			<span class="close">Cerrar</span>
+            <strong> Si ya te registraste y no aparece tu nombre envía un correo a: reaastromx@gmail.com </strong><br/>
+		</div>
+		
+	</div> 
 
 </form>
 </div>
-               
+         
+    
+    
+       
 
             </div> 
         </div>
